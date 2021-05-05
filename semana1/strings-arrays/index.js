@@ -58,7 +58,10 @@ console.log("O E-mail ", emailUsuario, "foi cadastrado com sucesso. Seja bem-vin
 
 //QUESTÃO 2
 /*
+
+//A
 const comidasPreferidas = ["Pizza", "Lasanha", "Macarronada", "Hambúrguer", "Pizza denovo"]
+//B
 console.log(` Essas são as minhas comidas preferidas:
 ${comidasPreferidas[0]} 
 ${comidasPreferidas[1]} 
@@ -68,25 +71,21 @@ ${comidasPreferidas[4]} `
 
 )
 
+//C
 
 const comidaPreferidaUsuario = prompt("Qual sua comida favorita?")
 
+comidasPreferidas[1] = comidaPreferidaUsuario
 
-console.log(
-    
-    `Essas são as minhas comidas preferidas agora:
-${comidasPreferidas[0]} 
-${comidasPreferidas[1]} 
-${comidasPreferidas[2]} 
-${comidasPreferidas[3]} 
-${comidasPreferidas[4]}`
 
-)
+
+console.log(comidasPreferidas)
+
 */
 
 //QUESTÃO 3
 
-
+/*
 const listaDeTarefa =[]    
 const tarefasUsuarioUm = prompt("Insira três atividade que você precisa realizar no dia de hoje, tarefa 1:")
 const tarefasUsuarioDois = prompt("Insira três atividade que você precisa realizar no dia de hoje, tarefa 2:")
@@ -100,6 +99,7 @@ listaDeTarefa.splice(tarefasUsuarioDois)
 
 console.log(listaDeTarefa)
 
+*/
 
 
 
