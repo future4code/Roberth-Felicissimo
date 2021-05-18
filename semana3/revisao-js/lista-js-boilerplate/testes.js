@@ -101,16 +101,16 @@ testEx5();
 
 // Teste exercício 6
 
-// function testEx6() {
-//   const output = [false, false, true, true, true]
-//   if(arrayCompare(retornaExpressoesBooleanas(), output)) {
-//     console.log('%c Você acertou a questão número 6', 'color: #00FF00')
-//   } else {
-//     console.log('%c Você errou a questão número 6', 'color: #CD0000')
-//   }
-// }
+function testEx6() {
+  const output = [false, false, true, true, true]
+  if(arrayCompare(retornaExpressoesBooleanas(), output)) {
+    console.log('%c Você acertou a questão número 6', 'color: #00FF00')
+  } else {
+    console.log('%c Você errou a questão número 6', 'color: #CD0000')
+  }
+}
 
-// testEx6()
+testEx6()
 // Teste exercício 7
 
 function testEx7() {

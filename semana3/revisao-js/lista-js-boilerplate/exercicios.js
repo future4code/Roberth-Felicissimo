@@ -79,30 +79,30 @@ function retornaQuantidadeElementos (array) {
 
 //Exercício 7
 
-// function retornaNNumerosPares(n) {
-//    // implemente sua lógica aqui
-//    const novoArray = [];
-//    for(let number = 0; array.length < n; number++){
-//       if(number % 2 === 0){
-//          novoArray.push(number)
-//       }
-//    }
-//    return novoArray
-// }
+function retornaNNumerosPares(n) {
+   // implemente sua lógica aqui
+   const novoArray = [];
+   for(let i = 0; array.length < n; i++){
+      if(number % 2 === 0){
+         novoArray.push(i)
+      }
+   }
+   return novoArray
+}
 
 // Exercício 8
 
 function checaTriangulo(a, b, c) {
   // implemente sua lógica aqui
-  if(a === b &&  b === c){
-   return 'Equilátero'
-}else if(a === b || a === c || b === c){
-   return 'Isósceles'
-}else{
-   return 'Escaleno'
-}
- }
+  if(a === b && b === c){
+     return "Equilátero"
+  } if(a !== b && b === c){
+     return "Isórceles"
 
+  } else{
+     return "Escaleno"
+  }
+}
 
 // Exercício 9
 
