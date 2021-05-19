@@ -1,0 +1,14 @@
+#plano-de-fundo{
+    background-image: url("fundo-pagina-transparente.jpg");
+    text-align: center;
+
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+#slogan{
+    text-align: center;
+}
+
