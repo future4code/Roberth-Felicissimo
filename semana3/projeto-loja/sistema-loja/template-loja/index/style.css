@@ -1,7 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-image: url("fundo-pagina-body-transparente.jpg");
-    width: 100%;
-    height: 100%;
+   height: 200vh;
     
 }
 #plano-de-fundo{
@@ -26,6 +29,9 @@ h1{
     font-size: large;
     text-align: center;
     background-color: rosybrown;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
 }
 
 ul{
@@ -52,4 +58,7 @@ ul li a:hover{
     color: #d6d6d6;
     border-bottom: 3px solid #ea0000;
    
+}
+footer{
+    bottom: 0%;
 }
