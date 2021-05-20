@@ -123,6 +123,10 @@ td button {
     height: 100px;
 }
 
+table{
+    display: block;
+    padding-left: 500px;
+}
 
 #back-button {
     background-color: white;
