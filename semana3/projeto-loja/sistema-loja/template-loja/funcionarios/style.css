@@ -1,7 +1,18 @@
-h1{
-    background-image: url(../index/fundo-pagina-transparente.jpg);
+body{
+    background-image: url("../index/fundo-pagina-body-transparente.jpg");
+    
 }
-p{
-    color: red;
+
+h1{
+    background-color: rosybrown;
     text-align: center;
+}
+#slogan{
+    font-size: large;
+    text-align: center;
+}
+#redes-sociais{
+    font-size: large;
+    text-align: center;
+    background-color: rosybrown;
 }
