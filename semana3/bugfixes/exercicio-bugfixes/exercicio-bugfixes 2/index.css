@@ -123,11 +123,6 @@ td button {
     height: 100px;
 }
 
-table{
-    display: block;
-    padding-left: 500px;
-}
-
 #back-button {
     background-color: white;
     width: 100px;
@@ -140,4 +135,12 @@ table{
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+div>input{
+    border: none;
+    border-bottom: solid 1px;
+}
+img{
+    width: 50px;
 }
