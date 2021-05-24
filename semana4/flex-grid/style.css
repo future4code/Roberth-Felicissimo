@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+/* tudo do header */
+
+header{
+    background-color: mediumvioletred;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+header div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    grid-column: 3 / 4;
+
+}
+img{
+    height: 20px;
+    margin-left: 10px;
+}
+header div h3{
+    margin-left: 20px;
+    justify-self: center;
+    margin-top: 18px;
+}
+/* tudo do main */
+
+main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
