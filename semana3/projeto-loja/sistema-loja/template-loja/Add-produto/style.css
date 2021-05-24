@@ -1,0 +1,11 @@
+body{
+    background-image: url("fundo-pagina-body-transparente.jpg");
+    
+}
+h1{
+    background-image: url(../index/fundo-pagina-transparente.jpg);
+}
+p{
+    color: red;
+    text-align: center;
+}
