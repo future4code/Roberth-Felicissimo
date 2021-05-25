@@ -15,7 +15,7 @@ body{
 header{
     background-color: mediumvioletred;
     display: flex;
-    height: 70px;
+    height: 50px;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -26,7 +26,7 @@ header div{
     justify-content: space-around;
     align-items: center;
 }
-button{
+header button{
     grid-column: 3 / 4;
 
 }
@@ -37,14 +37,50 @@ img{
 header div h3{
     margin-left: 20px;
     justify-self: center;
-    margin-top: 18px;
+    
 }
 /* tudo do main */
 
 main{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 200px 1fr;
 }
 
+main nav img{
+    height: 190px;
+    width: 200px;
+    justify-items: center;
+    row-gap: 200px;
+}
 
+div ul{
+    
+    height: 100vh;
+    width: 200px;
+    background-color: #f2d0e0;
+}
+#icones{
+    background-color:#f2d0e0 ;
+    height: 100vh;
+    row-gap: 20px;
+    
+    
+}
+nav button{
+    margin: 20px;
+    width: 230px;
+    height: 260px;
+    
+}
+ /* tudo do footer */
+
+ footer{
+     
+     height: 42px;
+     
+     background-color: mediumvioletred ;
+ }
+ footer h4{
+     text-align: center;
+     padding: 12px;
+ }
