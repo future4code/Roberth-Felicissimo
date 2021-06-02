@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    height: 100vh;
+}
+header{
+    background-color: rgba(32, 31, 31, 0.925);
+    height: 60px;
+    
+}
+#labetube{
+    margin-top: 14px;
+}
+#logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+#logo, h2{
+    color: red;
+}
+#btnBusca{
+    height: 30px;
+    width: 30px;
+    margin-right: 12px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 31, 31, 0.925);
+    height: 60px;
+    color: white;
+}
+
+
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
+#video-card{
+        width: 200px;
+}
+ul {
+    display: flex;
+    margin-top: 23px;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+    width: 30px;
+
+}
+ul li img{
+     display: grid;
+     column-gap: 8px;
+     width: 30px;
+     height: 30px;
+     
+     margin: 8px;
+     align-items: center;
+
+}
+
+.video{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#video1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+}
+
+#video-card-1{
+    margin-top: 70px;
+}
+
+#video2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+}
+
+#video-card-2{
+    margin-top: 70px;
+    width: 600px;   
+}
