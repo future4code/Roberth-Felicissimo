@@ -1,7 +1,19 @@
 import React from "react"
-import TelaDeCadastro from "./components/TelaDeCadastro"
-import TelaDePlaylists from "./components/TelaDePlaylists"
+import TelaDeCadastro from "./components/TelaDeCadastro.jsx"
+import TelaDePlaylists from "./components/TelaDePlaylists.jsx"
+import Header from "./components/Header.jsx"
+import {createGlobalStyle} from 'styled-components'
+import Footer from "./components/Footer.jsx"
 
+
+const EstilosGlobais = createGlobalStyle`
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+`
+  
 
 const url = "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists"
 
@@ -17,7 +29,7 @@ export default class App extends React.Component {
       case "cadastro":
         return <TelaDeCadastro irParaLista={this.irParaLista} />
       case "playlist":
-        return <TelaDePlaylists irParaCadastro={this.irParaCadastro} />
+        return <TelaDePlaylists irParaCadastro={this.irParaCadastro} />    
       default:
         return <div>Página Não Encontrada</div>
     }
@@ -30,7 +42,7 @@ export default class App extends React.Component {
   irParaLista = () => {
     this.setState({telaAtual: "playlist"})
   }
-
+  
 
   
 
@@ -39,7 +51,14 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <EstilosGlobais/>
+        <Header irParaLista={this.irParaLista} irParaCadastro={this.irParaCadastro}/>
         {this.escolheTela()}
+
+        <br/>
+        <br/>
+        <br/>
+        <Footer />
       </div>
     )
   }
