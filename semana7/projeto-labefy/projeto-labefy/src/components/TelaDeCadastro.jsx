@@ -1,11 +1,13 @@
 import React from "react"
 import axios from "axios"
 import styled from "styled-components"
+import img2 from "../imagem/img2.png"
+
 
 const Body = styled.div`
     background-color: #5c1f5c;
     width: 100%;
-    height: 460px;
+    height: 100%;
     color: black;
 
 a{
@@ -20,6 +22,8 @@ const ContainerSejaPremium = styled.div`
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+   
+
 #premium{
     font-size: 76px;
 }
@@ -29,9 +33,9 @@ const ContainerInput = styled.div`
     flex-direction: column;
     align-items:flex-start;
     justify-items: center;
-    margin-top: 150px;
-    margin-left: 36px;
     display: inline-block;
+    padding: 20px;
+   
 h3{
     display: flex;
     margin-left: 50px;
@@ -50,6 +54,18 @@ button{
     width: 8rem;
     border-radius: 20px;
     border: none;
+}
+
+`
+const Foto = styled.div`
+.foto{
+    height: 400px;
+    width: 400px;
+    margin-left: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    
 }
 `
 
@@ -89,7 +105,7 @@ export default class TelaDeCadastro extends React.Component {
                     <h4>Ouça suas musicas preferidas em qualquer lugar e quando quiser</h4>
                     <a href="#"><h1 className="planos">Nossos Planos</h1></a>
                 </ContainerSejaPremium>
-
+               
                 <ContainerInput>
                     <h2>Crie Playlists Personaizadas</h2>
                     <h3>Experimente agora!!!</h3>
@@ -100,7 +116,7 @@ export default class TelaDeCadastro extends React.Component {
                     />
                     <button onClick={this.cadastrarPlaylist}>Criar Playlist</button>
                 </ContainerInput>
-
+                <Foto><img className="foto" src={img2} alt="" /></Foto>
             </Body>
         )
     }

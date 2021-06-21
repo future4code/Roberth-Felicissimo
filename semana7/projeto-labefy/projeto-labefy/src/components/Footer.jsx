@@ -17,6 +17,11 @@ li{
     display: inline;
     margin: 10px;
 }
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
 `
 
 export default class Footer extends React.Component{
@@ -24,9 +29,9 @@ export default class Footer extends React.Component{
         return(
             <ContainerFooter>
                 <ul>
-                    <li>FACEBOOK</li>
-                    <li>INSTAGRAM</li>
-                    <li>GITHUB</li>
+                    <a href="https://www.facebook.com/"><li>FACEBOOK</li></a>
+                    <a href="https://www.instagram.com/ateliegeekstore/"><li>INSTAGRAM</li></a>
+                    <a href="https://github.com/future4code/Roberth-Felicissimo"><li>GITHUB</li></a>
                 </ul>
 
                 <p>Desenvolvido por Roberth Felicíssimo. Todos os direitos reservados.</p>

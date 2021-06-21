@@ -1,21 +1,34 @@
 import React from "react"
 import axios from "axios"
 import styled from "styled-components"
+import AddMusica from "./AddMusica"
 
 
 const CardUsuario = styled.div`
-    border: 1px solid black;
+    background-color: white;
     padding: 10px;
     margin: 10px;
     display:flex;
     justify-content: space-between;
+    width: 300px;
+    
 `
+const Body = styled.div`
+    background-color: #5c1f5c;
+ h1{
+     display: flex;
+     justify-content: center;
 
+ }
+ button{
+    margin: 14px;
+ }
+`
 const url = "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists"
 
 export default class TelaDePlaylists extends React.Component {
     state = {
-        playlists: []
+        playlists: [],
     }
 
     componentDidMount() {
@@ -63,13 +76,14 @@ export default class TelaDePlaylists extends React.Component {
         })
 
         return (
-            <div>
+            <Body>
                 <h1>Playlists</h1>
+                <AddMusica />
                 {AllPlaylists}
 
-                <button onClick={this.props.irParaCadastro}>home</button>
+                <button onClick={this.props.irParaCadastro}>Voltar</button>
 
-            </div>
+            </Body>
         )
     }
 }

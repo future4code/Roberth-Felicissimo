@@ -55,9 +55,7 @@ export default class App extends React.Component {
         <Header irParaLista={this.irParaLista} irParaCadastro={this.irParaCadastro}/>
         {this.escolheTela()}
 
-        <br/>
-        <br/>
-        <br/>
+        
         <Footer />
       </div>
     )

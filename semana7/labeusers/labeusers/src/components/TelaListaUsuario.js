@@ -53,10 +53,10 @@ export default class TelaListaUsuario extends React.Component {
 
     render() {
 
-        const listaUsuarios = this.state.usuarios.map((user) => {
+        const listaUsuarios = this.state.playlists.map((playlist) => {
             return <CardUsuario key={user.id}>
-                {user.name}
-                <button onClick={() => this.deletaUsuario(user.id)}>X</button>
+                {playlist.name}
+                <button onClick={() => this.deletaUsuario(playlist.id)}>X</button>
                 </CardUsuario>
         })
 
