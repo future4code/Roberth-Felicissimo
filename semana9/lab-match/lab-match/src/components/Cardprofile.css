@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-profile{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}

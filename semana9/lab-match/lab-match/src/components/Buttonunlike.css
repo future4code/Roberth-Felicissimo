@@ -1,0 +1,28 @@
+.button-unlike:hove{
+    color: blueviolet;
+}
+.button-unlike{
+
+    width: 50px;
+    height: 50px;
+    color: red;
+    font-size:40px;
+    margin-right: 9px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.button-like{
+
+    width: 50px;
+    height: 50px;
+    color: rgb(243, 29, 179);
+    font-size:40px;
+    margin-left: 9px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.buttons{
+    padding: 14px;
+}
