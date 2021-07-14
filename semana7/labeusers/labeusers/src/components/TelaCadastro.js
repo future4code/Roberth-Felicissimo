@@ -22,7 +22,7 @@ fazerCadastro = () => {
      
     const body = {
         "name": this.state.nome,
-        "email": this.state.email
+        
     }
     axios.post(url, body, {
         headers: {
@@ -30,7 +30,7 @@ fazerCadastro = () => {
         }
     })
     .then((response) =>{
-        alert("Usuário cadastrado com sucesso.")
+        alert("Usuário cadastrado com sucesso!")
         this.setState({nome: "", email:""})
     })
     .catch((err) => {
