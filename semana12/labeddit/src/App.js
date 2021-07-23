@@ -1,11 +1,16 @@
 import React from 'react'
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './constants/theme';
+import Router from './routes/Router'
+
 
 
 function App() {
   return (
-    <div>
-      <h1>Labeddit</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      
+      <Router />
+    </ThemeProvider>
   );
 }
 
